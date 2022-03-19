@@ -2,6 +2,7 @@ const tabButtons = document.querySelectorAll('.design-list__item');
 const tabDescriptions = document.querySelectorAll('.design__descr');
 const tabImages = document.querySelectorAll('.design-images');
 const tabTitles = document.querySelectorAll('.design__title');
+const tabLeftImages = document.querySelectorAll('.feature__img');
 
 const changeContent = (array, value) => {
 
@@ -23,6 +24,7 @@ tabButtons.forEach((tabButton, index) => {
         changeContent(tabImages, dataValue);
         changeContent(tabDescriptions, dataValue);
         changeContent(tabTitles, dataValue);
+        changeContent(tabLeftImages, dataValue);
         
         tabTitles.forEach((tabTitle, indexTitle) => {
             if (index === indexTitle){
