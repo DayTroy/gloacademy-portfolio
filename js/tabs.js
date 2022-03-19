@@ -24,8 +24,18 @@ tabButtons.forEach((tabButton, index) => {
         changeContent(tabImages, dataValue);
         changeContent(tabDescriptions, dataValue);
         changeContent(tabTitles, dataValue);
-        changeContent(tabLeftImages, dataValue);
+
         
+        tabLeftImages.forEach((tabLeftImage, indexLeftImage) => {
+            if (index === indexLeftImage) {
+                tabLeftImage.classList.remove('hidden');
+            }
+            else {
+                tabLeftImage.classList.add('hidden');
+
+            }
+        })
+
         tabTitles.forEach((tabTitle, indexTitle) => {
             if (index === indexTitle){
                 tabTitle.classList.remove('hidden');
