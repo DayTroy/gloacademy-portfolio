@@ -23,7 +23,7 @@ const updateClock = () => {
     timerBlock.textContent = `${fDays}:${fHours}:${fMinutes}:${fSeconds}`;
     if (timeRemaining <= 0) {
         clearInterval(interval);
-        timerBlock.textContent = `00:00:00`;
+        timerBlock.textContent = `00:00:00:00`;
     }
 }
 
